@@ -1,23 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+
+const nome = 'João';
+const sobrenome = 'Mendes';
+
+function soma(a, b) {
+  return a + b;
+}
+
+function subtracao(a, b) {
+  return a - b;
+}
+
+function multiplicacao(a, b) {
+  return a * b;
+}
+
+function divisao(a, b) {
+  return a / b;
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p>Nome armazenado: {nome} {sobrenome}. By React.</p>
+      <p>Soma de 2 + 2 = {soma(2, 2)}</p>
+      <p>Subtração de 2 - 2 = {subtracao(2, 2)}</p>
+      <p>Multiplicação de 2 * 2 = {multiplicacao(2, 2)}</p>
+      <p>Divisão de 2 / 2 = {divisao(2, 2)}</p>
     </div>
   );
 }
